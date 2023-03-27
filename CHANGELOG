@@ -1,0 +1,7 @@
+rfc2544-benchmark (1.8) bullseye; urgency=medium
+
+  * Moved to dedicated repository
+  * Cleanup
+  * Added example directory with config.xml and log.txt for reference
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Mon, 27 Mar 2023 23:56:18 +0200
