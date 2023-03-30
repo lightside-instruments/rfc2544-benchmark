@@ -26,34 +26,47 @@ cd example
 | tee log.txt | grep "^#"
 
 #===Throughput===
-#1 1488095.238095 pps, 20 octets interframe gap, 100.00% ... 2976190 / 2976190
-#Result: 1488095.238095 pps
+#1 1488095.238095 pps, 20 octets interframe gap, 100.00% ... 2001294 / 2976190
+#2 744047.619048 pps, 104 octets interframe gap, 50.00% ... 1488095 / 1488095
+#3 1116071.428571 pps, 48 octets interframe gap, 75.00% ... 2001280 / 2232142
+#4 925925.925926 pps, 71 octets interframe gap, 62.22% ... 1851851 / 1851851
+#5 1016260.162602 pps, 59 octets interframe gap, 68.29% ... 2001280 / 2032520
+#6 968992.248062 pps, 65 octets interframe gap, 65.12% ... 1937984 / 1937984
+#7 992063.492063 pps, 62 octets interframe gap, 66.67% ... 1984126 / 1984126
+#8 1000000.000000 pps, 61 octets interframe gap, 67.20% ... 2000000 / 2000000
+#9 1008064.516129 pps, 60 octets interframe gap, 67.74% ... 2001289 / 2016129
+#10 1000000.000000 pps, 61 octets interframe gap, 67.20% ... 2000000 / 2000000
+#Result: 1000000.000000 pps
 #===Latency===
 #Measurement style - bit forwarding
-#1 848 ns (min=800 ns, max=848 ns) ... 2976190 / 2976190
-#2 856 ns (min=808 ns, max=856 ns) ... 2976190 / 2976190
-#3 856 ns (min=808 ns, max=856 ns) ... 2976190 / 2976190
-#4 856 ns (min=808 ns, max=856 ns) ... 2976190 / 2976190
-#5 856 ns (min=808 ns, max=856 ns) ... 2976190 / 2976190
-#6 848 ns (min=800 ns, max=848 ns) ... 2976190 / 2976190
-#7 856 ns (min=808 ns, max=856 ns) ... 2976190 / 2976190
-#8 848 ns (min=800 ns, max=848 ns) ... 2976190 / 2976190
-#9 856 ns (min=808 ns, max=856 ns) ... 2976190 / 2976190
-#10 848 ns (min=800 ns, max=848 ns) ... 2976190 / 2976190
-#11 856 ns (min=808 ns, max=856 ns) ... 2976190 / 2976190
-#12 848 ns (min=800 ns, max=848 ns) ... 2976190 / 2976190
-#13 848 ns (min=800 ns, max=848 ns) ... 2976190 / 2976190
-#14 856 ns (min=808 ns, max=856 ns) ... 2976190 / 2976190
-#15 856 ns (min=808 ns, max=856 ns) ... 2976190 / 2976190
-#16 848 ns (min=800 ns, max=848 ns) ... 2976190 / 2976190
-#17 856 ns (min=808 ns, max=856 ns) ... 2976190 / 2976190
-#18 848 ns (min=800 ns, max=848 ns) ... 2976190 / 2976190
-#19 856 ns (min=808 ns, max=856 ns) ... 2976190 / 2976190
-#20 856 ns (min=808 ns, max=856 ns) ... 2976190 / 2976190
-#Result: 852.800000 nanoseconds
+#1 24624 ns (min=7024 ns, max=24624 ns) ... 2000000 / 2000000
+#2 24472 ns (min=7016 ns, max=24472 ns) ... 2000000 / 2000000
+#3 24624 ns (min=7024 ns, max=24624 ns) ... 2000000 / 2000000
+#4 24360 ns (min=7016 ns, max=24360 ns) ... 2000000 / 2000000
+#5 24224 ns (min=7024 ns, max=24224 ns) ... 2000000 / 2000000
+#6 24976 ns (min=7016 ns, max=24976 ns) ... 2000000 / 2000000
+#7 24048 ns (min=7016 ns, max=24048 ns) ... 2000000 / 2000000
+#8 24048 ns (min=7016 ns, max=24048 ns) ... 2000000 / 2000000
+#9 24584 ns (min=7024 ns, max=24584 ns) ... 2000000 / 2000000
+#10 24536 ns (min=7016 ns, max=24536 ns) ... 2000000 / 2000000
+#11 24376 ns (min=7024 ns, max=24376 ns) ... 2000000 / 2000000
+#12 24688 ns (min=7024 ns, max=24688 ns) ... 2000000 / 2000000
+#13 24064 ns (min=7016 ns, max=24064 ns) ... 2000000 / 2000000
+#14 24360 ns (min=7024 ns, max=24360 ns) ... 2000000 / 2000000
+#15 24224 ns (min=7016 ns, max=24224 ns) ... 2000000 / 2000000
+#16 24208 ns (min=7016 ns, max=24208 ns) ... 2000000 / 2000000
+#17 24704 ns (min=7016 ns, max=24704 ns) ... 2000000 / 2000000
+#18 24752 ns (min=7016 ns, max=24752 ns) ... 2000000 / 2000000
+#19 24760 ns (min=7016 ns, max=24760 ns) ... 2000000 / 2000000
+#20 24176 ns (min=7016 ns, max=24176 ns) ... 2000000 / 2000000
+#Result: 24440.400000 nanoseconds
 #===Frame loss rate===
-#1 100% rate, 0% loss, (100.000000% rate actual), 1488095.238095 pps (1488095.238095 pps actual), 20 octets interframe gap ... 2976190 / 2976190
-#2 90% rate, 0% loss, (89.361702% rate actual), 1339285.714286 pps (1329787.234043 pps actual), 30 octets interframe gap ... 2659574 / 2659574
+#1 100% rate, 32% loss, (100.000000% rate actual), 1488095.238095 pps (1488095.238095 pps actual), 20 octets interframe gap ... 2001302 / 2976190
+#2 90% rate, 24% loss, (89.361702% rate actual), 1339285.714286 pps (1329787.234043 pps actual), 30 octets interframe gap ... 2001276 / 2659574
+#3 80% rate, 15% loss, (80.000000% rate actual), 1190476.190476 pps (1190476.190476 pps actual), 41 octets interframe gap ... 2001279 / 2380952
+#4 70% rate, 3% loss, (69.421488% rate actual), 1041666.666667 pps (1033057.851240 pps actual), 57 octets interframe gap ... 2001302 / 2066115
+#5 60% rate, 0% loss, (59.574468% rate actual), 892857.142857 pps (886524.822695 pps actual), 77 octets interframe gap ... 1773049 / 1773049
+#6 50% rate, 0% loss, (49.704142% rate actual), 744047.619048 pps (739644.970414 pps actual), 105 octets interframe gap ... 1479289 / 1479289
 #===Back to back frames===
 #1 2 back-to-back frames ... 2 / 2
 #2 4 back-to-back frames ... 4 / 4
@@ -65,19 +78,19 @@ cd example
 #8 256 back-to-back frames ... 256 / 256
 #9 512 back-to-back frames ... 512 / 512
 #10 1024 back-to-back frames ... 1024 / 1024
-#11 2048 back-to-back frames ... 2048 / 2048
-#12 4096 back-to-back frames ... 4096 / 4096
-#13 8192 back-to-back frames ... 8192 / 8192
-#14 16384 back-to-back frames ... 16384 / 16384
-#15 32768 back-to-back frames ... 32768 / 32768
-#16 65536 back-to-back frames ... 65536 / 65536
-#17 131072 back-to-back frames ... 131072 / 131072
-#18 262144 back-to-back frames ... 262144 / 262144
-#19 524288 back-to-back frames ... 524288 / 524288
-#20 1048576 back-to-back frames ... 1048576 / 1048576
-#21 1488095 back-to-back frames ... 1488095 / 1488095
+#11 2048 back-to-back frames ... 1915 / 2048
+#12 1536 back-to-back frames ... 1536 / 1536
+#13 1792 back-to-back frames ... 1748 / 1792
+#14 1664 back-to-back frames ... 1664 / 1664
+#15 1728 back-to-back frames ... 1686 / 1728
+#16 1696 back-to-back frames ... 1683 / 1696
+#17 1680 back-to-back frames ... 1675 / 1680
+#18 1672 back-to-back frames ... 1672 / 1672
+#19 1676 back-to-back frames ... 1676 / 1676
+#20 1678 back-to-back frames ... 1678 / 1678
+#21 1679 back-to-back frames ... 1679 / 1679
 #The back to back search is limited to bursts below 1 second.
-#Result: >= 1488095
+#Result: >= 1679
 #===System recovery===
 #TODO
 #===Reset===
