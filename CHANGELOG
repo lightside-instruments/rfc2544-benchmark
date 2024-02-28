@@ -1,3 +1,9 @@
+rfc2544-benchmark (1.10) jammy; urgency=medium
+
+  * Fixes bug in the bugfix in 1.9
+
+ -- Vladimir Vassilev <vladimir@lightside-instruments.com>  Wed, 28 Feb 2024 15:59:10 +0100
+
 rfc2544-benchmark (1.9) jammy; urgency=medium
 
   * Fixed bug in script reading the speed argument from /interfaces-state/interface/speed even when the argument is provided explicitly
