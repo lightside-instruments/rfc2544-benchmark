@@ -112,8 +112,10 @@ def trial(network, conns, yconns, test_time=60, frame_size=1500, interframe_gap=
 
 	state_before = tntapi.network_get_state(network, conns, filter=filter)
 	state_before_wo_ns=tntapi.strip_namespaces(state_before)
-	#speed=1000000000 # 1Gb
-	speed = int(state_before_wo_ns.xpath("node[node-id='%s']/data/interfaces-state/interface[name='%s']/speed"%(src_node, src_node_interface))[0].text)
+
+	if(speed == []):
+		#speed=1000000000 # 1Gb
+		speed = int(state_before_wo_ns.xpath("node[node-id='%s']/data/interfaces-state/interface[name='%s']/speed"%(src_node, src_node_interface))[0].text)
 
 	if(frames_per_burst == 0):
 		total_frames = int(math.floor(test_time*speed/((interframe_gap+frame_size)*8)))
