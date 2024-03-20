@@ -52,9 +52,9 @@ def get_traffic_stats(dst_node, dst_node_interface, src_node, src_node_interface
 
 	#assert(generated_octets>0)
 	print("generated_octets="+str(generated_octets))
-	testframe_pkts_nodes = after.xpath("""node[node-id='%s']/data/interfaces/interface[name='%s']/traffic-analyzer/state/testframe-stats/testframe-pkts"""%(dst_node, dst_node_interface))
+	testframe_pkts_nodes = after.xpath("""node[node-id='%s']/data/interfaces/interface[name='%s']/traffic-analyzer/state/testframe-stats/pkts"""%(dst_node, dst_node_interface))
 	if(len(testframe_pkts_nodes) == 1):
-		rx_testframe_pkts=1.0*get_delta_counter(before,after,dst_node,"""/interfaces/interface[name='%s']/traffic-analyzer/state/testframe-stats/testframe-pkts"""%(dst_node_interface))
+		rx_testframe_pkts=1.0*get_delta_counter(before,after,dst_node,"""/interfaces/interface[name='%s']/traffic-analyzer/state/testframe-stats/pkts"""%(dst_node_interface))
 #		assert(rx_testframe_pkts>0)
 	else:
 		rx_testframe_pkts=None
